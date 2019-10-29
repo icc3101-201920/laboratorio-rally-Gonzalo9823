@@ -1,0 +1,9 @@
+\\Mac\Home\Desktop\rally\ModelosRally\bin\Debug\netstandard1.6\ModelosRally.deps.json
+\\Mac\Home\Desktop\rally\ModelosRally\bin\Debug\netstandard1.6\ModelosRally.dll
+\\Mac\Home\Desktop\rally\ModelosRally\bin\Debug\netstandard1.6\ModelosRally.pdb
+\\Mac\Home\Desktop\rally\ModelosRally\obj\Debug\netstandard1.6\ModelosRally.csprojAssemblyReference.cache
+\\Mac\Home\Desktop\rally\ModelosRally\obj\Debug\netstandard1.6\ModelosRally.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\rally\ModelosRally\obj\Debug\netstandard1.6\ModelosRally.AssemblyInfoInputs.cache
+\\Mac\Home\Desktop\rally\ModelosRally\obj\Debug\netstandard1.6\ModelosRally.AssemblyInfo.cs
+\\Mac\Home\Desktop\rally\ModelosRally\obj\Debug\netstandard1.6\ModelosRally.dll
+\\Mac\Home\Desktop\rally\ModelosRally\obj\Debug\netstandard1.6\ModelosRally.pdb
