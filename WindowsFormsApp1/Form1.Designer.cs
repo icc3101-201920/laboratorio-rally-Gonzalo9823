@@ -56,12 +56,12 @@
             this.verEquiposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewTeamPanel = new System.Windows.Forms.Panel();
             this.teamInfoPanel = new System.Windows.Forms.Panel();
+            this.viewTeamPersonsLabel = new System.Windows.Forms.Label();
             this.viewTeamVehiclesLabel = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.viewTeamComboBox = new System.Windows.Forms.ComboBox();
-            this.viewTeamPersonsLabel = new System.Windows.Forms.Label();
             this.addTeamPanel.SuspendLayout();
             this.addPersonPanel.SuspendLayout();
             this.addVehiclePanel.SuspendLayout();
@@ -72,14 +72,16 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
+            this.label1.AllowDrop = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(341, 39);
+            this.label1.Location = new System.Drawing.Point(0, 30);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(403, 36);
+            this.label1.Size = new System.Drawing.Size(1067, 36);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Bienvenidos a Rally Manager";
+            this.label1.Text = "Bienvenidos a Rally Manager (Por Vicente Gana y Gonzalo Caballero)";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AgregarPilotoButton
             // 
@@ -116,9 +118,9 @@
             this.addTeamPanel.Controls.Add(this.label7);
             this.addTeamPanel.Controls.Add(this.teamNameTextBox);
             this.addTeamPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.addTeamPanel.Location = new System.Drawing.Point(0, 0);
+            this.addTeamPanel.Location = new System.Drawing.Point(0, 30);
             this.addTeamPanel.Name = "addTeamPanel";
-            this.addTeamPanel.Size = new System.Drawing.Size(1067, 554);
+            this.addTeamPanel.Size = new System.Drawing.Size(1067, 524);
             this.addTeamPanel.TabIndex = 8;
             // 
             // addTeamButton
@@ -158,9 +160,9 @@
             this.addPersonPanel.Controls.Add(this.AgregarPilotoButton);
             this.addPersonPanel.Controls.Add(this.NameTextBox);
             this.addPersonPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.addPersonPanel.Location = new System.Drawing.Point(0, 0);
+            this.addPersonPanel.Location = new System.Drawing.Point(0, 30);
             this.addPersonPanel.Name = "addPersonPanel";
-            this.addPersonPanel.Size = new System.Drawing.Size(1067, 554);
+            this.addPersonPanel.Size = new System.Drawing.Size(1067, 524);
             this.addPersonPanel.TabIndex = 8;
             this.addPersonPanel.Visible = false;
             // 
@@ -213,9 +215,9 @@
             this.addVehiclePanel.Controls.Add(this.label5);
             this.addVehiclePanel.Controls.Add(this.marcaTextBox);
             this.addVehiclePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.addVehiclePanel.Location = new System.Drawing.Point(0, 0);
+            this.addVehiclePanel.Location = new System.Drawing.Point(0, 30);
             this.addVehiclePanel.Name = "addVehiclePanel";
-            this.addVehiclePanel.Size = new System.Drawing.Size(1067, 554);
+            this.addVehiclePanel.Size = new System.Drawing.Size(1067, 524);
             this.addVehiclePanel.TabIndex = 10;
             this.addVehiclePanel.Visible = false;
             // 
@@ -291,7 +293,7 @@
             this.verEquiposToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1067, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1067, 30);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -329,9 +331,9 @@
             this.viewTeamPanel.Controls.Add(this.label3);
             this.viewTeamPanel.Controls.Add(this.viewTeamComboBox);
             this.viewTeamPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.viewTeamPanel.Location = new System.Drawing.Point(0, 28);
+            this.viewTeamPanel.Location = new System.Drawing.Point(0, 30);
             this.viewTeamPanel.Name = "viewTeamPanel";
-            this.viewTeamPanel.Size = new System.Drawing.Size(1067, 526);
+            this.viewTeamPanel.Size = new System.Drawing.Size(1067, 524);
             this.viewTeamPanel.TabIndex = 11;
             this.viewTeamPanel.Visible = false;
             // 
@@ -346,6 +348,16 @@
             this.teamInfoPanel.Size = new System.Drawing.Size(1043, 409);
             this.teamInfoPanel.TabIndex = 3;
             this.teamInfoPanel.Visible = false;
+            // 
+            // viewTeamPersonsLabel
+            // 
+            this.viewTeamPersonsLabel.AutoSize = true;
+            this.viewTeamPersonsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewTeamPersonsLabel.Location = new System.Drawing.Point(244, 227);
+            this.viewTeamPersonsLabel.Name = "viewTeamPersonsLabel";
+            this.viewTeamPersonsLabel.Size = new System.Drawing.Size(29, 29);
+            this.viewTeamPersonsLabel.TabIndex = 3;
+            this.viewTeamPersonsLabel.Text = "--";
             // 
             // viewTeamVehiclesLabel
             // 
@@ -396,27 +408,17 @@
             this.viewTeamComboBox.TabIndex = 0;
             this.viewTeamComboBox.SelectedIndexChanged += new System.EventHandler(this.ViewTeamComboBox_SelectedIndexChanged);
             // 
-            // viewTeamPersonsLabel
-            // 
-            this.viewTeamPersonsLabel.AutoSize = true;
-            this.viewTeamPersonsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewTeamPersonsLabel.Location = new System.Drawing.Point(244, 227);
-            this.viewTeamPersonsLabel.Name = "viewTeamPersonsLabel";
-            this.viewTeamPersonsLabel.Size = new System.Drawing.Size(29, 29);
-            this.viewTeamPersonsLabel.TabIndex = 3;
-            this.viewTeamPersonsLabel.Text = "--";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.viewTeamPanel);
-            this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.addVehiclePanel);
-            this.Controls.Add(this.addTeamPanel);
             this.Controls.Add(this.addPersonPanel);
+            this.Controls.Add(this.viewTeamPanel);
+            this.Controls.Add(this.addTeamPanel);
+            this.Controls.Add(this.addVehiclePanel);
+            this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
